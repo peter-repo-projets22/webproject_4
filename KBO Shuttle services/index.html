@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shuttle Service - Your Reliable Ride</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#005A9C",
+              secondary: "#FFA500",
+              "background-light": "#F8F9FA",
+              "background-dark": "#101922",
+              "text-light": "#0d141b",
+              "text-dark": "#e7edf3",
+              "text-muted-light": "#6C757D",
+              "text-muted-dark": "#9fb3c5",
+              "border-light": "#cfdbe7",
+              "border-dark": "#34424f",
+            },
+            fontFamily: {
+              display: ["Public Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-display bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark"
+  >
+    <div class="relative w-full overflow-x-hidden">
+      <header
+        class="sticky top-0 z-50 flex items-center justify-center border-b border-border-light bg-background-light/80 backdrop-blur-sm dark:border-border-dark dark:bg-background-dark/80"
+      >
+        <nav
+          class="flex w-full max-w-6xl items-center justify-between whitespace-nowrap px-4 py-3 md:px-10"
+        >
+          <a
+            class="flex items-center gap-3 text-text-light dark:text-text-dark"
+            href="#"
+          >
+            <img
+              src="images/logo.jpg"
+              alt="Shuttle Service Logo"
+              class="h-8 w-auto"
+            />
+          </a>
+          <div class="hidden items-center gap-8 md:flex">
+            <a
+              class="text-sm font-medium leading-normal text-text-light hover:text-primary dark:text-text-dark dark:hover:text-primary"
+              href="#services"
+              >Services</a
+            >
+            <a
+              class="text-sm font-medium leading-normal text-text-light hover:text-primary dark:text-text-dark dark:hover:text-primary"
+              href="#testimonials"
+              >Testimonials</a
+            >
+            <a
+              class="text-sm font-medium leading-normal text-text-light hover:text-primary dark:text-text-dark dark:hover:text-primary"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
+          <div class="flex items-center gap-4">
+            <a
+              class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-secondary px-4 text-sm font-bold leading-normal tracking-[0.015em] text-white transition-transform hover:scale-105"
+              href="#contact"
+            >
+              <span class="truncate">Call us today </span>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main class="flex flex-col items-center">
+        <div class="w-full max-w-6xl px-4 py-5 md:px-10">
+          <section
+            class="relative -mx-4 -mt-5 mb-16 md:-mx-10 md:-mt-5"
+            id="booking"
+          >
+            <div
+              class="flex min-h-[520px] flex-col items-center justify-center gap-8 bg-cover bg-center bg-no-repeat p-4 text-center md:min-h-[600px]"
+              data-alt="Modern shuttle van driving on a city street at dusk"
+              style="
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.4) 0%,
+                    rgba(0, 0, 0, 0.6) 100%
+                  ),
+                  url('images/wallpaper.jpg');
+              "
+            >
+              <div class="flex flex-col gap-2">
+                <h1
+                  class="text-4xl font-black leading-tight tracking-[-0.033em] text-white md:text-5xl"
+                >
+                 Transport available for schools around ruimsig</h1>
+                <p
+                  class="mx-auto max-w-2xl text-base font-normal leading-normal text-slate-200 md:text-lg"
+                >
+                  Premium shuttle services to schools in and around Ruimsig,
+                  Roodepoort. Safe, reliable, and affordable transport for your
+                  children.
+                </p>
+              </div>
+              <a
+                class="flex h-12 w-full max-w-xs cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-transform hover:scale-105"
+                href="#contact"
+              >
+                <span class="truncate">Contact us</span>
+              </a>
+            </div>
+          </section>
+          <section class="mb-16">
+            <h2
+              class="mb-6 px-4 text-center text-3xl font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark"
+            >
+              Why Choose Us
+            </h2>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div
+                class="flex flex-1 flex-col gap-3 rounded-xl border border-border-light bg-background-light p-6 text-center shadow-sm dark:border-border-dark dark:bg-slate-800"
+              >
+                <span
+                  class="material-symbols-outlined mx-auto text-4xl text-primary"
+                  >shield_person</span
+                >
+                <h3
+                  class="text-lg font-bold leading-tight text-text-light dark:text-text-dark"
+                >
+                  Professional Drivers
+                </h3>
+               
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-3 rounded-xl border border-border-light bg-background-light p-6 text-center shadow-sm dark:border-border-dark dark:bg-slate-800"
+              >
+                <span
+                  class="material-symbols-outlined mx-auto text-4xl text-primary"
+                  >support_agent</span
+                >
+                <h3
+                  class="text-lg font-bold leading-tight text-text-light dark:text-text-dark"
+                >
+                  Consistant Support
+                </h3>
+              
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-3 rounded-xl border border-border-light bg-background-light p-6 text-center shadow-sm dark:border-border-dark dark:bg-slate-800"
+              >
+                <span
+                  class="material-symbols-outlined mx-auto text-4xl text-primary"
+                  >book_online</span
+                >
+                <h3
+                  class="text-lg font-bold leading-tight text-text-light dark:text-text-dark"
+                >
+                  Reliable
+                </h3>
+               
+              </div>
+              <div
+                class="flex flex-1 flex-col gap-3 rounded-xl border border-border-light bg-background-light p-6 text-center shadow-sm dark:border-border-dark dark:bg-slate-800"
+              >
+                <span
+                  class="material-symbols-outlined mx-auto text-4xl text-primary"
+                  >directions_car</span
+                >
+                <h3
+                  class="text-lg font-bold leading-tight text-text-light dark:text-text-dark"
+                >
+                Affordable
+                </h3>
+               
+              </div>
+            </div>
+
+            
+          </section>
+          <section class="mb-16" id="services">
+            <h2
+              class="mb-6 px-4 text-center text-3xl font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark"
+            >
+              Schools around RUIMSIG
+         <section class="py-12">
+  
+
+  <div
+    class="mx-auto max-w-4xl rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-slate-800"
+  >
+    <ul
+      class="list-disc space-y-3 pl-6 text-left text-lg text-gray-700 dark:text-gray-300 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 sm:space-y-0 sm:pl-0"
+    >
+      <li>Crawford International - Ruimsig</li>
+      <li>The Gateway School</li>
+      <li>EduFun4kids</li>
+      <li>Tres Jolie School</li>
+      <li>Jolly Tots Pre-School and Learning centre</li>
+      <li>Ruimsig Montessori Cambridge International School</li>
+      <li>Ruimsig Academy</li>
+      <li>Praxis Schools and  many more...</li>
+    </ul>
+  </div>
+</section>
+<section class="px-4 py-8">
+  <div class="relative w-full overflow-hidden rounded-xl shadow-md" style="padding-top: 56.25%;">
+    <iframe
+      class="absolute left-0 top-0 h-full w-full"
+      src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d28665.48279910893!2d27.8658342!3d-26.0928676!3m2!1i1024!2i768!4f13.1!2m1!1sschools%20around%20ruimsig%20roodepoort!5e0!3m2!1sen!2sza!4v1761736603383!5m2!1sen!2sza"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+
+
+          </section>
+          <section class="mb-16" id="testimonials">
+            <h2
+              class="mb-6 px-4 text-center text-3xl font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark"
+            >
+              What Our Clients Say
+            </h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div
+                class="flex flex-col gap-4 rounded-xl border border-border-light bg-background-light p-6 shadow-sm dark:border-border-dark dark:bg-slate-800"
+              >
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                </div>
+                <blockquote
+                  class="text-base italic text-text-muted-light dark:text-text-muted-dark"
+                >
+                  "I recommend this shuttle service to anyone needing reliable
+                  transportation for their Kids!"
+                </blockquote>
+                <p class="font-bold text-text-light dark:text-text-dark">
+                  - Sarah J.
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-4 rounded-xl border border-border-light bg-background-light p-6 shadow-sm dark:border-border-dark dark:bg-slate-800"
+              >
+                <div class="flex items-center">
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                  <span class="material-symbols-outlined text-yellow-500"
+                    >star</span
+                  >
+                </div>
+                <blockquote
+                  class="text-base italic text-text-muted-light dark:text-text-muted-dark"
+                >
+                  "Relaible, safe and Affordable..perfect transport for our urban area"
+                </blockquote>
+                <p class="font-bold text-text-light dark:text-text-dark">
+                  - Banda P.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="mb-16" id="contact">
+          
+<div
+  class="mx-auto max-w-2xl rounded-xl border border-border-light bg-background-light p-8 shadow-lg dark:border-border-dark dark:bg-slate-800"
+>
+  <div class="text-center">
+    <h2
+      class="text-3xl font-bold text-text-light dark:text-text-dark"
+    >
+      Get in Touch
+    </h2>
+    <p class="mt-2 text-text-muted-light dark:text-text-muted-dark">
+      We’d love to hear from you. Reach us through any of the channels below.
+    </p>
+  </div>
+
+  <div class="mt-8 space-y-6 text-center text-text-light dark:text-text-dark">
+    <div class="flex flex-col items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+      <p class="font-medium">Ruimsig, Roodepoort, Johannesburg</p>
+    </div>
+
+    <div class="flex flex-col items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-3xl">call</span>
+      <a
+        href="tel:+27115551234"
+       
+        class="text-lg font-semibold text-primary hover:underline"
+      >
+        (+27) 71 990 6631||
+         (+27) 81 034 4427
+      </a>
+    </div>
+
+    <div class="flex flex-col items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-3xl">email</span>
+      <a
+        href="mailto:info@kboshuttle.co.za"
+        class="text-lg font-semibold text-primary hover:underline"
+      >
+        kbogroupshuttle@gamil.com
+      </a>
+    </div>
+
+   
+
+    <div class="mt-6 flex justify-center gap-6">
+      <a href="#" class="text-primary hover:text-primary/80">
+        <i class="fa-brands fa-facebook text-2xl"></i>
+      </a>
+      <a href="#" class="text-primary hover:text-primary/80">
+        <i class="fa-brands fa-instagram text-2xl"></i>
+      </a>
+      <a href="#" class="text-primary hover:text-primary/80">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+          </section>
+        </div>
+      </main>
+      <footer
+        class="border-t border-border-light bg-slate-100 dark:border-border-dark dark:bg-slate-800"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 md:flex-row md:px-10"
+        >
+          <p class="text-sm text-text-muted-light dark:text-text-muted-dark">
+            © 2025 KBO GROUP Shuttle Service. All Rights Reserved.
+          </p>
+          <div class="flex items-center gap-6">
+            <a
+              class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary"
+              href="https://peteripai.github.io/www.ipaiwebdev.co.za/"
+              >Designed by </a
+            >
+            <a
+              class="text-sm text-text-muted-light hover:text-primary dark:text-text-muted-dark dark:hover:text-primary"
+              href="https://peteripai.github.io/www.ipaiwebdev.co.za/"
+              >IPAIWEBDEV</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
